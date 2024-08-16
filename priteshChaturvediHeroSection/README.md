@@ -1,3 +1,8 @@
+| Pritesh Chaturvedi | Hero Section | Link | 16-08-2024 | HTML, CSS, JS, React, Tailwind, React-router |
+
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
