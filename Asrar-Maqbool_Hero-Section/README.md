@@ -1,6 +1,6 @@
 ## Edu Elevate
 
-### To run the project, navigate to _Asrar-Maqbool_Hero-Section_ then run these two commands:
+### To run the project, navigate to Asrar-Maqbool_Hero-Section then run these two commands:
 
 - > `npm install`
 
