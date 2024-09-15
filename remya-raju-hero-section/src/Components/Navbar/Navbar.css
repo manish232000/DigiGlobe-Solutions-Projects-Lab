@@ -1,0 +1,174 @@
+.navbar{
+
+    position: absolute;
+
+    margin: 0;
+
+    padding: 10px 10%;
+
+    width: 80%;
+
+    top:0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/* Navbar Logo */
+
+.navbar-logo{
+
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.logo{
+
+    color: white;
+    font-size: 30px;
+
+}
+
+.navbar-logo h2{
+
+    color: white;
+    font-size: 25px;
+
+}
+
+/* Navbar Menu */
+
+.menulist{
+
+    display: flex;
+    align-items: center;
+
+    gap:30px;   
+
+    list-style: none;
+
+    color: white;
+
+    font-size: 20px;
+
+    margin: 0;
+}
+
+.menulist li{
+
+    cursor: pointer;
+
+    transition: 0.5s;
+}
+
+.menulist li:hover{
+
+    transform: scale(1.1);
+}
+
+.contact{
+
+    padding: 8px 20px;
+
+    background: white;
+    color: black;
+
+    border-radius: 50px;
+}
+
+/* Navbar Side Menu */
+
+
+.navbar-sidemenu{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidemenu-icons{
+
+    color: white;
+
+    font-size: 35px;
+
+    display: none;
+}
+
+.menu-hide{
+
+    visibility: hidden;
+}
+
+
+
+.side-menu {
+
+    position: absolute;
+
+    right: 10%;
+    top:70px;
+
+    padding: 0;
+
+    z-index: 1000;
+
+
+}
+
+.side-menu li{
+
+    list-style: none;
+
+    padding: 10px;
+
+    width: 200px;
+
+    font-size: 20px;
+
+    transition: 0.5s;
+
+    background: white;
+
+    margin-top: 5px;
+
+    cursor: pointer;
+
+}
+
+.side-menu li:hover{
+
+    background: rgb(212, 217, 219);
+
+    transform: scale(1.05);
+
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 760px){
+
+    .menulist{
+
+        display: none;
+    }
+
+    .navbar-logo h2{
+
+        font-size: 20px;
+    }
+
+    .logo{
+
+        font-size: 25px;
+    }
+
+    .sidemenu-icons{
+
+        display: block;
+    }
+}
