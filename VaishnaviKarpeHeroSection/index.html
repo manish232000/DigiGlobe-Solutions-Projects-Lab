@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>
+            WonderWorld
+        </title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-window-close" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">TRIPS</a></li>
+                        <li><a href="">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="text">
+                <h2 class="line1">WonderWorld</h2>
+                <h4 class="line2">Where every trip is a new Wonder!</h4>
+                <a href="" class="button">Explore more</a>
+            </div>
+
+        </section>
+
+
+        <!----Trips------->
+        <section class="trips">
+            <h1>Upcoming trips</h1>
+            <p>Book your seat for the upcoming wonder trip</p>
+            <div class="row">
+                <div class="col">
+                    <h2>KERELA</h2>
+                    <p>DATE:  3/11/24 to 9/11/24<br>COST: Rs.25,000/-pp<br>Click for more details</p>
+                    <a href="" class="bt">Details</a>
+                </div>
+                <div class="col">
+                    <h2>GUJRAT</h2>
+                    <p>DATE:  20/11/24 to 28/11/24<br>COST: Rs.27,000/-pp<br>Click for more details</p>
+                    <a href="" class="bt">Details</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!--------- Contact Us ------------>
+        <section class="contact">
+            <h2>Reach out to us to make your next trip a wonder!</h2>
+            <a href="" class="contact-bt">Contact Us</a>
+        </section>
+
+
+        <!--------- Footer------------>
+        <section class="footer">
+            <h2>About Us</h2>
+            <p>Welcome to WonderWorld: Where every trip is a wonder.<br> Established in 2005, WonderWorld has been dedicated to turning travel dreams into unforgettable realities.<br> With nearly two decades of experience, we specialize in crafting personalized tour packages,<br> organizing group trips, and offering seamless flight ticket booking services.<br> Whether you're seeking a serene escape, an adventurous journey, or a cultural exploration, <br>our expert team ensures that every detail is tailored to your preferences.<br> At WonderWorld, we believe that every trip should be as unique as you are, making each journey a true wonder.</p>        
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instgram"></i>
+                <i class="fa fa-linkedin"></i>
+
+            </div>
+        </section>
+
+
+        <!---------Javascript for Toggle menu--------->
+        <script>
+            var navLinks=document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+
+            function hideMenu(){
+                navLinks.style.right= "-200px";
+            }
+        </script>
+    </body>
+</html>
