@@ -1,0 +1,478 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+.navbarbtn .fa-x{
+    display: none;
+}
+#menubar{
+    visibility: hidden;
+}
+ .logo{
+    display: flex;
+    flex-direction: row;
+}
+.logopic img{
+    width: 50px;
+    height: 50px;
+    margin-top: 2px;
+}
+.navt{
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      align-items: center;
+      border-bottom: 5px solid brown;
+}
+.navt .logo h3{
+   font-size: 30px;
+   color: brown;
+   padding-top: 10px;
+   padding-left: 20px;
+}
+
+ ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 100px;
+}
+
+.navt ul li a{
+     margin-left: 70px;
+    font-size: 25px;
+  color: black;
+
+
+}
+.navt ul a:hover{
+     color: brown;
+}
+.navt .active a{ 
+    color: rgb(240, 93, 10);
+}
+  
+
+.herosection{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+.herosection .left{   
+    margin-top: 200px;
+    padding: 20px;
+    text-align: center;
+}
+.herosection .left h2{
+    font-size: 60px;
+}
+.herosection .left p{
+    padding: 36px;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.herosection .right img{
+    width: 600px;
+    height: 500px;
+    margin-top: 0px;
+    position: static;
+}
+.right .item{
+    display: flex;
+    gap: 60px;
+    justify-content: space-evenly;
+    
+    
+}
+
+.right .item img{
+    width: 80px;
+    height: 80px;
+    
+}
+
+.right .item img:hover{
+    scale: 1.2;
+    
+}
+
+.left .order{
+    width: 400px;
+    height: 50px;
+    border: 2px solid brown;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 50px;
+    background-color: rgb(226, 137, 43);
+    display: inline-block;
+
+  }
+  .order:hover{
+    background-color: rgb(175, 106, 158);
+    
+  }
+  .left .order p{ font-size: 25px;
+    text-align: center;
+    padding: 10px 20px 10px 20px ;
+    font-family: Impact,  'Arial Narrow Bold', sans-serif;
+  }
+ .left .order i{
+    font-size: 25px;
+    position: absolute;
+    margin-top: -35px;
+    margin-left: 110px;
+    color: brown;
+  }
+   .navbarbtn i{
+    display: none;
+  } 
+  .menubar{
+    display: none;
+  }
+  .about_box{  border: 2px solid brown;
+    width: 90%;
+    height: 500px;
+    margin: 50px  50px;
+    margin-left: 80px;
+}
+.about_box h1{
+    color: brown;
+    text-align: center;
+}
+.about_box h3{
+    color: black;
+    text-align: center;
+}
+textarea{  width: 80%;
+    height: 250px;
+    border: 2px solid brown;
+    margin-top: 20px;
+    margin-left: 120px;
+    padding-top: 20px;
+    text-align: center; 
+}
+
+input{   font-size: 27px;
+    height: 40px;
+    width: 120px;
+    margin-top: 10px;
+    margin-left: 300px;
+    border-radius: 10px;
+    background-color: rgba(162, 35, 35, 0.047);
+   
+}
+
+  /* ipad series screen  */ 
+  @media (min-width:768px ) and (max-width:800px)
+  {
+    .navt .logo h3{
+        padding-left: 10px;
+    }
+     ul{
+        display: flex;
+        gap: 60px;
+    }
+    .herosection{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+    .herosection .right img{
+        width: 100%;
+
+        
+    }
+    .right .item img{
+        width: 100px;
+        height: 100px;
+        
+    }
+    .herosection .left{
+        margin-top: 0px;
+        
+    }
+    .navt  i{
+      display: none;
+    }
+    #menubar{
+        display: none;
+    }
+    .about_box{
+        margin-left: 40px;
+       }
+       textarea{  width: 80%;
+        height: 250px;
+        border: 2px solid brown;
+        margin-top: 20px;
+        margin-left: 65px;
+        padding-top: 20px;
+        text-align: center; 
+    }
+    
+    input{   font-size: 27px;
+        height: 40px;
+        width: 120px;
+        margin-top: 10px;
+        margin-left: 140px;
+        border-radius: 10px;
+        background-color: rgba(162, 35, 35, 0.047);
+       
+    }
+    .logo{
+        display: flex;
+        flex-direction: row;
+    }
+    .logopic img{
+        width: 50px;
+        height: 50px;
+        margin-top: 2px;
+    }
+
+  }
+
+  /* android mobile screen*/
+  @media (min-width:360px ) and (max-width:412px)
+  {  .navt {
+    position: relative;
+  }
+     
+        .navt .logo h3{
+            padding-left: 6px;
+        
+        }
+        .logo{
+            display: flex;
+            flex-direction: row;
+        }
+        .logopic img{
+            width: 50px;
+            height: 50px;
+            margin-top: 2px;
+        }
+        
+       .navt .fa-x{  position: absolute;
+                    margin-top: -30px;
+                  visibility: hidden;
+       }
+         #menubar {
+            width: 100%;
+             height: 160px;
+            background-color: rgba(165, 42, 42, 0.108);
+            position: absolute;
+             visibility: hidden;
+        }
+        #menubar ul{  
+                display: block;
+                text-align: center;
+             
+        }
+        #menubar ul li{     border-top: 2px solid;
+            border-bottom-width: 100%;
+            padding: 10px;
+            backdrop-filter: blur(3px);
+          
+        }
+        #menubar #last_item{
+            border-bottom: 2px solid;
+        }
+        #menubar ul a{  color: black;
+            font-size: 25px;
+        }
+        #menubar ul a:hover{
+            color: brown;
+       }
+       #menubar .active a{ 
+           color: rgb(240, 93, 10);
+       }
+         
+        .herosection{
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 10px;
+        }
+        .herosection .right img{
+            width: 100%;
+            height: 400px;
+    
+            
+        }
+        .right .item img{
+            width: 60px;
+            height: 60px;
+            
+        }
+        .herosection .left{
+            margin-top: 0px;
+            
+            
+        }
+    
+        .left .order{
+            width: 80%;
+            margin-left: 10px;
+            margin-top: -10px;
+        }
+        .herosection .left h2 {
+            font-size: 40px;
+            
+            
+        }
+        .herosection .left>p{ 
+            
+            text-align: center;
+            
+        }
+         .navt .fa-solid {
+    
+            color: brown;
+            display: block;
+            font-size: 30px;
+            margin-right: 0px;
+          }
+          .navt i:hover{
+            color: rgb(175, 106, 158);
+          }
+
+           .show{ 
+            
+            position: absolute;
+             visibility: visible;
+              }
+
+             .show ul{ 
+                display: block;
+                text-align: center;
+        }
+        .show ul li{ background-color:rgba(165, 42, 42, 0.185);
+            
+              visibility: visible;
+            padding: 10px;
+        }
+        .show ul a{  
+            visibility: visible;  
+            font-size: 25px;
+         
+        }
+    
+    textarea{  height: 300px;
+        border: 2px solid brown;
+        margin-top: 20px;
+        margin-left: 40px;
+        padding-top: 20px;
+        text-align: center; 
+    }
+    
+    input{  border-radius: 10px;
+         background-color: rgba(162, 35, 35, 0.047);
+        font-size: 17px;
+        height: 40px;
+        width: 100px;
+        margin-left: 60px;
+        margin-top: 10px;
+    }
+   
+  }
+/*  
+  iphone series screen */
+  @media (min-width:320px ) and (max-width:428px)
+  {
+     
+        .navt .logo h3{
+            padding-left: 6px;
+        }
+        .navt  ul{
+            display: none;
+        }
+        .herosection{
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 10px;
+        }
+        .herosection .right img{
+            width: 100%;
+            height: 400px;
+    
+            
+        }
+        .right .item img{
+            width: 60px;
+            height: 60px;
+            
+        }
+        .herosection .left{
+            margin-top: 0px;
+            
+            
+        }
+    
+        .left .order{
+            width: 80%;
+            margin-left: 10px;
+            margin-top: -10px;
+        }
+        .herosection .left h2 {
+            font-size: 35px;
+            
+            
+        }
+        .herosection .left>p{
+            text-align: center;
+            
+        }
+        ul{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+        .navt .menu i{
+    
+            color: brown;
+            display: flex;
+            font-size: 30px;
+            margin-right: 0px;
+          }
+          .navt .menu i:hover{
+            color: violet;
+          }
+          .left .order i{
+            font-size: 25px;
+            position: absolute;
+            margin-top: -36px;
+            margin-left: 90px;
+            
+            
+            color: brown;
+          }
+
+          .about_box{ width: 90%;
+            height: 550px;
+          margin-top: 10px;
+          margin-left: 20px;
+          border: none;
+  
+      }
+       textarea{ 
+         width: 80%;
+      height: 150px;
+      border: 2px solid brown;
+      margin-top: 20px;
+       margin-left: 30px;
+      padding-top: 20px;
+      text-align: center; 
+     }
+       input{  border-radius: 10px;
+      background-color: rgba(162, 35, 35, 0.047);
+     font-size: 17px;
+     height: 40px;
+     width: 100px;
+     margin-left: 60px;
+     margin-top: 10px;
+     }
+  }
+ 
