@@ -1,0 +1,83 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #2C3E50;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.hero {
+    height: 100vh;
+    background: url('https://img.freepik.com/free-photo/skyscrapers-from-low-angle-view_1359-568.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    text-align: center;
+    color: #FFF;
+}
+
+.headline {
+    font-size: 4em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.subheadline {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.cta {
+    padding: 15px 30px;
+    font-size: 1em;
+    color: #FFF;
+    background-color: #E74C3C;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+    background-color: #C0392B;
+}
+
+
+@media (max-width: 768px) {
+    .headline {
+        font-size: 2.5em;
+    }
+
+    .subheadline {
+        font-size: 1.2em;
+    }
+}
